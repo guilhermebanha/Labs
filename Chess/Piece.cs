@@ -4,10 +4,14 @@ using System.Text;
 
 namespace Chess
 {
-    public abstract class Piece
+    public abstract class Piece : IMovable
     {
-        Position Position { get; set; }
-        Color Color { get; set; }
+        public Position Position { get; set; }
+        public Color Color { get; set; }
+        public bool isWhite { get; set; }
+        public bool isBlack { get; set;  }
+
+        public abstract string Symbol { get; }
 
         public Piece() { }
         public Piece(Position position, Color color) { Position = position; Color = color; }
@@ -16,6 +20,7 @@ namespace Chess
         {
             return Position.ToString();
         }
-    
+
+        public abstract void Move(int dx, int dy);
     }
 }

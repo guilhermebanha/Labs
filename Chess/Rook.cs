@@ -8,10 +8,18 @@ namespace Chess
     {
         public Rook(Position pos, Color color) : base(pos, color) { }
 
+        public override void Move(int dx, int dy)
+        {
+            if(dx != 0) { base.Position.X += dx; }
+            else { base.Position.Y += dy; }
+        }
+
         public override string ToString()
         {
 
             return $"T{base.ToString()}";
         }
+        public override string Symbol => "P";
+
     }
 }
