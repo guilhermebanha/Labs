@@ -20,3 +20,5 @@ foreach (Piece piece in pieces)
 {
     Console.WriteLine($"{piece.Name} - {piece}");
 }
+Board board = new Board();
+board.show();
