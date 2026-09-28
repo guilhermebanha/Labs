@@ -25,6 +25,20 @@ namespace Chess
 
         public override string Symbol => "P";
 
+        public static Pawn operator ++(Pawn pawn)
+        {
+            if (pawn.isWhite)
+            {
+                pawn.Move(0, pawn.Position.Y++);
+            }
+            else
+            {
+                pawn.Move(0, pawn.Position.Y--);
+
+            }
+            return pawn;
+        }
+
         
     }
 }
