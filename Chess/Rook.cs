@@ -19,7 +19,7 @@ namespace Chess
 
             return $"T{base.ToString()}";
         }
-        public override string Symbol => "P";
+        public override string Symbol => "R";
 
         public override string Name
         {

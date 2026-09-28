@@ -28,7 +28,5 @@ namespace Chess
         {
             get { return "Desconhecida"; }
         }
-    
     }
 }
-    
