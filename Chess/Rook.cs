@@ -13,5 +13,9 @@ namespace Chess
 
             return $"T{base.ToString()}";
         }
+        public override string Name
+        {
+            get { return "Rook"; }
+        }
     }
 }

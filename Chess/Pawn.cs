@@ -12,5 +12,9 @@ namespace Chess
         {
             return base.ToString();
         }
+        public override string Name
+        {
+            get { return "Pawn"; }
+        }
     }
 }

@@ -12,3 +12,11 @@ Pawn pawn = new Pawn(p2, Color.Black);
 
 Console.WriteLine(pawn.ToString());
 Console.WriteLine(rook.ToString());
+
+List<Piece> pieces = new List<Piece>();
+pieces.Add(new Rook(new Position(0,1), Color.White));
+pieces.Add(new Pawn(new Position(0,0), Color.White));
+foreach (Piece piece in pieces)
+{
+    Console.WriteLine($"{piece.Name} - {piece}");
+}

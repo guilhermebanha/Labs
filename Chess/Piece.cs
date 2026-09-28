@@ -16,6 +16,12 @@ namespace Chess
         {
             return Position.ToString();
         }
+        
+        public virtual string Name
+        {
+            get { return "Desconhecida"; }
+        }
     
     }
 }
+    
