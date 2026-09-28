@@ -6,15 +6,15 @@ namespace Chess
 {
     public abstract class Piece
     {
-        Position position { get; set; }
-        Color color { get; set; }
+        Position Position { get; set; }
+        Color Color { get; set; }
 
         public Piece() { }
-        public Piece(Position position, Color color) { position = position; color = color; }
+        public Piece(Position position, Color color) { Position = position; Color = color; }
 
         public override string ToString()
         {
-            return position.ToString();
+            return Position.ToString();
         }
     
     }
