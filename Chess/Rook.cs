@@ -21,5 +21,9 @@ namespace Chess
         }
         public override string Symbol => "P";
 
+        public override string Name
+        {
+            get { return "Rook"; }
+        }
     }
 }

@@ -23,4 +23,12 @@ namespace Chess
 
         public abstract void Move(int dx, int dy);
     }
+        
+        public virtual string Name
+        {
+            get { return "Desconhecida"; }
+        }
+    
+    }
 }
+    
