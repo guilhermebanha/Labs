@@ -23,8 +23,9 @@ namespace Chess
 
         public override string ToString()
         {
-            /// TODO: Para concluir, inclua o método ToString() que deve devolver a posição na notação oficial do xadrez(a1 a h8).
-            return "";
+            char column = (char)('a' + X);
+            int row = Y + 1;
+            return $"{column}{row}";
         }
 
     }
